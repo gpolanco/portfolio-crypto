@@ -7,8 +7,6 @@ interface ITableProps {
 
 export const Table: FC<ITableProps> = ({ children, className }) => {
   return (
-    <table className={classNames("table-auto w-full", className)}>
-      {children}
-    </table>
+    <table className={classNames("table-auto", className)}>{children}</table>
   );
 };

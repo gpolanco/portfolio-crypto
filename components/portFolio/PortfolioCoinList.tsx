@@ -17,7 +17,7 @@ interface ICoinTableProps {
 export const PortfolioCoinList: FC<ICoinTableProps> = ({ coins }) => {
   return (
     <Card>
-      <CardBody>
+      <CardBody className="overflow-x-scroll">
         <Table>
           <TableHead>
             <TableColumn className="w-2 text-center" tag="th">
